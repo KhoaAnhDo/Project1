@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+         <!-- Ceiling -->
+    <a-entity static-body geometry="primitive: box; depth: 60; height: 0.1; width: 60" position="0 14 5" material="shader: flat; side: double; opacity: 1;
+    src: url(image/floor.jpg); repeat: 20 12"></a-entity>
+        <!-- Floor -->
+        <a-entity static-body geometry="primitive: box; depth: 60; height: 0.1; width: 60" position="0 -0.5 5" material="shader: flat; side: double; opacity: 1;
+    src: url(image/floor.jpg); repeat: 20 20"></a-entity>
+    <!-- Trim -->
+    <a-entity geometry="primitive: box; depth: 0.6; height: 1; width: 60" position="0 13.5 -24.25" rotation="0 0 0" material="shader: standard;
+roughness: 1; src: url(image/trim.jpg); repeat: 1 1"></a-entity>
+    <a-entity geometry="primitive: box; depth: 0.6; height: 1; width: 60" position="0 13.5 34.38" rotation="0 0 0" material="shader: standard;
+roughness: 1; src: url(image/trim.jpg); repeat: 1 1"></a-entity>
+    <a-entity geometry="primitive: box; depth: 0.6; height: 1; width: 60" position="29.1 13.5 5" rotation="0 90 0" material="shader: standard;
+roughness: 1; src: url(image/trim.jpg); repeat: 1 1"></a-entity>
+    <a-entity geometry="primitive: box; depth: 0.6; height: 1; width: 60" position="-28.8 13.5 5" rotation="0 90 0" material="shader: standard;
+roughness: 1; src: url(image/trim.jpg); repeat: 1 1"></a-entity>
+    <!-- Walls  -->
+    <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 60" position="-29.7 6.5 5" rotation="0 90 0" material="shader: standard;
+roughness: 1; src: url(image/wall.jpg); repeat: 4 2"></a-entity>
+    <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 60" position="29.86 6.5 5" rotation="0 90 0" material="shader: standard;
+roughness: 1; src: url(image/wall.jpg); repeat: 4 2"></a-entity>
+    <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 60" position="0 6.5 -25" rotation="0 0 0" material="shader: standard;
+roughness: 1; src: url(image/wall.jpg); repeat: 4 2"></a-entity>
+    <a-entity static-body geometry="primitive: box; depth: 1; height: 14; width: 60" position="0 6.5 34.826" rotation="0 0 0" material="shader: standard;
+roughness: 1; src: url(image/wall.jpg); repeat: 4 2"></a-entity>
+
+    </a-scene>
+  </body>
+</html>
